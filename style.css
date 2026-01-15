@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+html {
+    background: #ffffff;
+    -webkit-text-size-adjust: 100%;
+}
+
 :root {
     /* charged Brand Colors */
     --pretty-black: #13121A;
@@ -76,9 +81,9 @@ body::before {
     width: 500px;
     height: 500px;
     background: var(--purple-primary);
-    opacity: 0.05;
+    opacity: 0.04;
     border-radius: 50%;
-    filter: blur(120px);
+    filter: blur(80px);
     pointer-events: none;
     z-index: 0;
 }
@@ -91,9 +96,9 @@ body::after {
     width: 500px;
     height: 500px;
     background: var(--orange-primary);
-    opacity: 0.05;
+    opacity: 0.04;
     border-radius: 50%;
-    filter: blur(120px);
+    filter: blur(80px);
     pointer-events: none;
     z-index: 0;
 }
