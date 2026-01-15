@@ -36,10 +36,10 @@
 
     /* Spacing */
     --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 2.5rem;
+    --spacing-sm: 0.9rem;
+    --spacing-md: 1.35rem;
+    --spacing-lg: 1.8rem;
+    --spacing-xl: 2.2rem;
 
     /* Border Radius */
     --radius-sm: 8px;
@@ -58,8 +58,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: var(--pretty-black);
     position: relative;
     overflow-x: hidden;
@@ -103,18 +103,21 @@ body::after {
     border: 1px solid #F3F4F6;
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
     max-width: 480px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
 }
 
 .lang-toggle-wrapper {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 .logo {
@@ -141,7 +144,7 @@ body::after {
 
 .tagline {
     font-size: 0.75rem;
-    opacity: 0.4;
+    opacity: 0.55;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-align: center;
@@ -185,13 +188,13 @@ h1 {
     line-height: 1.6;
     color: var(--pretty-black);
     opacity: 0.8;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     text-align: center;
     text-transform: lowercase;
 }
 
 .cycles-control {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
     background: #F3F4F6;
     border-radius: var(--radius-md);
     padding: var(--spacing-md);
@@ -286,11 +289,11 @@ h1 {
 }
 
 .breathing-circle {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     background: var(--orange-primary);
-    margin: var(--spacing-lg) auto;
+    margin: var(--spacing-md) auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,7 +359,7 @@ h1 {
     display: flex;
     gap: var(--spacing-sm);
     justify-content: center;
-    margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+    margin: var(--spacing-md) 0 var(--spacing-sm) 0;
 }
 
 .btn {
@@ -514,6 +517,7 @@ h1 {
     position: relative;
     z-index: 10;
     width: 100%;
+    padding-top: var(--spacing-sm);
 }
 
 .app-footer p {
@@ -553,13 +557,18 @@ h1 {
 }
 
 @media (max-width: 600px) {
+    body {
+        padding: var(--spacing-sm);
+    }
+
     .container {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
+        gap: var(--spacing-sm);
     }
 
     .logo {
         max-width: 180px;
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
     }
 
     .tagline {
@@ -568,8 +577,8 @@ h1 {
     }
 
     h1 {
-        font-size: 1.75rem;
-        margin-bottom: var(--spacing-md);
+        font-size: 1.7rem;
+        margin-bottom: var(--spacing-sm);
     }
 
     .subtitle {
@@ -578,13 +587,13 @@ h1 {
     }
 
     .cycles-control {
-        margin-bottom: var(--spacing-lg);
-        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+        padding: var(--spacing-sm);
     }
 
     .breathing-circle {
-        width: 200px;
-        height: 200px;
+        width: 190px;
+        height: 190px;
         margin: var(--spacing-md) auto;
     }
 
@@ -601,12 +610,12 @@ h1 {
     }
 
     .btn {
-        padding: 1rem var(--spacing-lg);
+        padding: 0.9rem var(--spacing-md);
         font-size: 1rem;
     }
 
     .info {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
     }
 
     .app-footer {
