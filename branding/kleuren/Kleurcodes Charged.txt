@@ -1,0 +1,13 @@
+Kleurcodes Charged
+
+Pretty Black: #13121A;
+Very White: #FFFFFF;
+Progressive Purple - Dark: #8E80FF;
+Progressive Purple - Mid: #BAB2FF;
+Progressive Purple - Light: #D1CCFF;
+Positive Pearl - Dark: #E3DED0;
+Positive Pearl - Mid: #EDEAE1;
+Positive Pearl - Light: #F5F3EE;
+Active Orange - Dark: #FF5E1F;
+Active Orange - Mid: #FF8859;
+Active Orange - Light: #FFD1BE;
